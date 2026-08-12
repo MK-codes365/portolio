@@ -61,9 +61,9 @@
 *Aug 2026 – Present · Remote*
 - Engineered responsive multi-role portals (User, Coach, Expert, Admin) using **React 19**, **Tailwind CSS**, and **Framer Motion**, improving navigation efficiency by **30%**.
 - Implemented a centralized **RBAC** system integrating **Firebase Authentication** and custom **JWT route guards**, securing routes and data across 4 permission tiers.
-- Integrated **15+ RESTful API endpoints** via custom React hooks (`useApi`) with request normalization and client-side caching, cutting redundant API requests by **35%**.
+- Integrated **15+ RESTful API endpoints** via custom React hooks (`useApi`) with request normalization, **Redis caching & rate limiting**, cutting redundant API requests by **35%**.
 - Built health analytics/earnings dashboards with **Recharts**; added **Vitest** tests and **Husky/Oxlint** hooks, cutting linting errors by **40%**.
-- **Key Skills**: `React 19`, `Tailwind CSS`, `Framer Motion`, `Firebase Auth`, `RBAC / JWT`, `RESTful APIs`, `Recharts`, `Vitest`, `Husky & Oxlint`
+- **Key Skills**: `React 19`, `Tailwind CSS`, `Redis`, `Rate Limiting`, `SQL`, `Framer Motion`, `Firebase Auth`, `RBAC / JWT`, `RESTful APIs`, `Recharts`, `Vitest`, `Husky & Oxlint`
 
 ### 💻 Full Stack Web Developer Intern — **InAmigos Foundation (IAF)**
 *Apr 2026 – May 2026 · Remote*

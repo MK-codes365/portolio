@@ -45,7 +45,7 @@ export const Experience = ({ id, visible, sectionRef }) => {
           Implemented a centralized <strong>RBAC</strong> system integrating <strong>Firebase Authentication</strong> and custom <strong>JWT route guards</strong>, securing routes and data across 4 permission tiers.
         </>,
         <>
-          Integrated <strong>15+ RESTful API endpoints</strong> via custom React hooks (<code>useApi</code>) with request normalization and client-side caching, cutting redundant API requests by <strong>35%</strong>.
+          Integrated <strong>15+ RESTful API endpoints</strong> via custom React hooks (<code>useApi</code>) with request normalization, <strong>Redis caching & rate limiting</strong>, cutting redundant API requests by <strong>35%</strong>.
         </>,
         <>
           Built health analytics/earnings dashboards with <strong>Recharts</strong>; added <strong>Vitest</strong> tests and <strong>Husky/Oxlint</strong> hooks, cutting linting errors by <strong>40%</strong>.
@@ -54,6 +54,9 @@ export const Experience = ({ id, visible, sectionRef }) => {
       skills: [
         'React 19',
         'Tailwind CSS',
+        'Redis',
+        'Rate Limiting',
+        'SQL',
         'Framer Motion',
         'Firebase Authentication',
         'RBAC / JWT',
