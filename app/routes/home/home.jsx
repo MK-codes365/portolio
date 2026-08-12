@@ -21,6 +21,7 @@ import { baseMeta } from '~/utils/meta';
 import { Intro } from './intro';
 import { Profile } from './profile';
 import { ProjectSummary } from './project-summary';
+import { Experience } from './experience';
 import { TechStack } from './tech-stack';
 import { useEffect, useRef, useState } from 'react';
 import config from '~/config.json';
@@ -61,10 +62,11 @@ export const Home = () => {
   const projectTwo = useRef();
   const projectThree = useRef();
   const projectFour = useRef();
+  const experience = useRef();
   const techStack = useRef();
 
   useEffect(() => {
-    const sections = [intro, details, projectOne, projectTwo, projectThree, projectFour, techStack];
+    const sections = [intro, details, projectOne, projectTwo, projectThree, projectFour, experience, techStack];
 
     const sectionObserver = new IntersectionObserver(
       (entries, observer) => {
@@ -208,6 +210,11 @@ export const Home = () => {
             },
           ],
         }}
+      />
+      <Experience
+        sectionRef={experience}
+        visible={visibleSections.includes(experience.current)}
+        id="experience"
       />
       <TechStack
         sectionRef={techStack}

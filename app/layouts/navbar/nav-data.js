@@ -10,6 +10,10 @@ export const navLinks = [
     pathname: '/#project-1',
   },
   {
+    label: 'Experience',
+    pathname: '/#experience',
+  },
+  {
     label: 'My Tech Stack',
     pathname: '/#tech-stack',
   },

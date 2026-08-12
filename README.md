@@ -55,6 +55,25 @@
 
 ---
 
+## 💼 Professional Experience
+
+### 🚀 Full Stack Engineer Intern — **Physio NutriCore**
+*Aug 2026 – Present · Remote*
+- Engineered responsive multi-role portals (User, Coach, Expert, Admin) using **React 19**, **Tailwind CSS**, and **Framer Motion**, improving navigation efficiency by **30%**.
+- Implemented a centralized **RBAC** system integrating **Firebase Authentication** and custom **JWT route guards**, securing routes and data across 4 permission tiers.
+- Integrated **15+ RESTful API endpoints** via custom React hooks (`useApi`) with request normalization and client-side caching, cutting redundant API requests by **35%**.
+- Built health analytics/earnings dashboards with **Recharts**; added **Vitest** tests and **Husky/Oxlint** hooks, cutting linting errors by **40%**.
+- **Key Skills**: `React 19`, `Tailwind CSS`, `Framer Motion`, `Firebase Auth`, `RBAC / JWT`, `RESTful APIs`, `Recharts`, `Vitest`, `Husky & Oxlint`
+
+### 💻 Full Stack Web Developer Intern — **InAmigos Foundation (IAF)**
+*Apr 2026 – May 2026 · Remote*
+- Audited event platform via browser DevTools; improved Lighthouse Performance Score from **64 to 76 (+18.8%)**.
+- Built **20+ REST APIs** and developed **20+ responsive, production-ready pages** using the **MERN stack** aligned with client requirements.
+- Built responsive React components (Hero, Footer, About, Team Profile) improving cross-device compatibility; delivered live demos and iterated from client feedback.
+- **Key Skills**: `MERN Stack`, `React.js`, `REST APIs`, `Node.js`, `Express.js`, `MongoDB`, `Lighthouse`, `Browser DevTools`, `Responsive Design`
+
+---
+
 ## 💻 Featured Projects
 
 - **[URL Shortener](https://github.com/MK-codes365/urlshortner)**: High-performance URL shortening service with custom aliases, rate limiting, and analytics.
