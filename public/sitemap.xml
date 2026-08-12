@@ -1,0 +1,22 @@
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>https://hamishw.com/</loc>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://hamishw.com/contact/</loc>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://hamishw.com/uses/</loc>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://hamishw.com/projects/healconnect/</loc>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://hamishw.com/projects/zerotrace/</loc>
+    <changefreq>monthly</changefreq>
+  </url>
+</urlset>

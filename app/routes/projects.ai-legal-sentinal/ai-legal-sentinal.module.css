@@ -1,0 +1,196 @@
+.sentinel {
+  --accent: oklch(65% 0.22 15);
+  --accent-safe: #10b981;
+  --accent-warning: #f59e0b;
+  --accent-danger: #ef4444;
+}
+
+.imagesText {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spaceM);
+}
+
+/* Interactive Risk Dashboard Container */
+.interactiveContainer {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: var(--spaceXL);
+  width: 100%;
+  max-width: 1000px;
+  margin: var(--space2XL) auto;
+  padding: var(--spaceXL);
+  background: color-mix(in lab, var(--backgroundLight) 80%, black);
+  border: 1px solid color-mix(in lab, var(--textTitle) 15%, transparent);
+  border-radius: 16px;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.4);
+
+  @media (--mediaTablet) {
+    grid-template-columns: 1fr;
+    gap: var(--spaceL);
+  }
+}
+
+.clauseList {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spaceM);
+}
+
+.dashboardHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: var(--spaceM);
+}
+
+.dashboardTitle {
+  font-size: var(--fontSizeBodyM);
+  font-weight: var(--fontWeightBold);
+  color: var(--textTitle);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.clauseCard {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  padding: var(--spaceM);
+  background: color-mix(in lab, var(--backgroundLight) 50%, black);
+  border: 1px solid color-mix(in lab, var(--textTitle) 12%, transparent);
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all var(--durationS) var(--bezierFastoutSlowin);
+
+  &:hover {
+    transform: translateX(4px);
+    border-color: var(--accent);
+  }
+
+  &[data-active='true'] {
+    border-color: var(--accent);
+    background: color-mix(in lab, var(--accent) 8%, var(--backgroundLight));
+    box-shadow: 0 4px 20px color-mix(in lab, var(--accent) 15%, transparent);
+  }
+}
+
+.clauseHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.clauseName {
+  font-size: var(--fontSizeBodyS);
+  font-weight: var(--fontWeightBold);
+  color: var(--textTitle);
+}
+
+.clauseBadge {
+  font-size: 11px;
+  font-weight: var(--fontWeightBold);
+  padding: 3px 8px;
+  border-radius: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+
+  &[data-level='safe'] {
+    background: rgba(16, 185, 129, 0.15);
+    color: var(--accent-safe);
+    border: 1px solid rgba(16, 185, 129, 0.3);
+  }
+
+  &[data-level='warning'] {
+    background: rgba(245, 158, 11, 0.15);
+    color: var(--accent-warning);
+    border: 1px solid rgba(245, 158, 11, 0.3);
+  }
+
+  &[data-level='danger'] {
+    background: rgba(239, 68, 68, 0.15);
+    color: var(--accent-danger);
+    border: 1px solid rgba(239, 68, 68, 0.3);
+  }
+}
+
+.clauseSnippet {
+  font-size: var(--fontSizeBodyXS);
+  color: var(--textLight);
+  line-height: 1.4;
+  font-family: monospace;
+}
+
+/* AI Analysis Inspection Panel */
+.analysisPanel {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spaceM);
+  padding: var(--spaceL);
+  background: color-mix(in lab, var(--backgroundLight) 30%, black);
+  border: 1px solid color-mix(in lab, var(--accent) 25%, transparent);
+  border-radius: 12px;
+}
+
+.gaugeHeader {
+  display: flex;
+  align-items: center;
+  gap: var(--spaceM);
+  padding-bottom: var(--spaceM);
+  border-bottom: 1px solid color-mix(in lab, var(--textTitle) 10%, transparent);
+}
+
+.scoreCircle {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(16, 185, 129, 0.2) 0%, transparent 70%);
+  border: 2px solid var(--accent-safe);
+  box-shadow: 0 0 16px rgba(16, 185, 129, 0.3);
+}
+
+.scoreVal {
+  font-size: var(--fontSizeBodyM);
+  font-weight: var(--fontWeightBold);
+  color: var(--accent-safe);
+  line-height: 1;
+}
+
+.scoreLabel {
+  font-size: 9px;
+  color: var(--textLight);
+  text-transform: uppercase;
+}
+
+.analysisTitle {
+  font-size: var(--fontSizeBodyS);
+  font-weight: var(--fontWeightBold);
+  color: var(--textTitle);
+  margin-bottom: 4px;
+}
+
+.aiResponse {
+  font-size: var(--fontSizeBodyS);
+  color: var(--textTitle);
+  line-height: 1.5;
+  background: color-mix(in lab, var(--backgroundLight) 60%, black);
+  padding: var(--spaceM);
+  border-radius: 8px;
+  border-left: 3px solid var(--accent);
+}
+
+.recommendation {
+  font-size: var(--fontSizeBodyXS);
+  color: var(--textLight);
+  line-height: 1.4;
+}
+
+.actionTag {
+  color: var(--accent);
+  font-weight: var(--fontWeightBold);
+}
