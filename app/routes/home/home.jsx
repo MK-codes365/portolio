@@ -66,7 +66,7 @@ export const Home = () => {
   const techStack = useRef();
 
   useEffect(() => {
-    const sections = [intro, details, projectOne, projectTwo, projectThree, projectFour, experience, techStack];
+    const sections = [intro, details, experience, projectOne, projectTwo, projectThree, projectFour, techStack];
 
     const sectionObserver = new IntersectionObserver(
       (entries, observer) => {
@@ -112,6 +112,11 @@ export const Home = () => {
         sectionRef={details}
         visible={visibleSections.includes(details.current)}
         id="details"
+      />
+      <Experience
+        sectionRef={experience}
+        visible={visibleSections.includes(experience.current)}
+        id="experience"
       />
       <ProjectSummary
         id="project-1"
@@ -210,11 +215,6 @@ export const Home = () => {
             },
           ],
         }}
-      />
-      <Experience
-        sectionRef={experience}
-        visible={visibleSections.includes(experience.current)}
-        id="experience"
       />
       <TechStack
         sectionRef={techStack}
