@@ -85,7 +85,7 @@ const ProfileText = ({ visible, titleId }) => (
       <DecoderText text="Hi there" start={visible} delay={500} />
     </Heading>
     <Text className={styles.description} data-visible={visible} size="l" as="p">
-      I'm Mukut Kumar, a passionate SDE Software Development Engineer.
+      I'm Mukut Kumar, a passionate Software Development Engineer.
       My focus is in Software Development, Backend Engineering, and building scalable, high-performance web applications. Having a strong
       interest in modern web technologies, scalable architectures, and efficient system design allows me to build robust, user-friendly solutions from
       frontend to backend. If you're interested in the tools and software I
