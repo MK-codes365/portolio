@@ -48,8 +48,8 @@ export const links = () => {
 
 export const meta = () => {
   return baseMeta({
-    title: 'Full Stack Engineer & SDE',
-    description: `Portfolio of ${config.name} — Full Stack Engineer building scalable web applications, backend architectures, and AI solutions.`,
+    title: 'SDE Software Development Engineer',
+    description: `Portfolio of ${config.name} — SDE Software Development Engineer building scalable web applications, backend architectures, and AI solutions.`,
   });
 };
 

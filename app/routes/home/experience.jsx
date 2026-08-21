@@ -28,7 +28,7 @@ export const Experience = ({ id, visible, sectionRef }) => {
 
   const experiences = [
     {
-      role: 'Full Stack Engineer Intern',
+      role: 'SDE Software Development Engineer Intern',
       company: 'Physio NutriCore',
       type: 'Internship',
       period: 'Aug 2026 – Present',
@@ -67,7 +67,7 @@ export const Experience = ({ id, visible, sectionRef }) => {
       ],
     },
     {
-      role: 'Full Stack Web Developer Intern',
+      role: 'SDE Software Development Engineer Intern',
       company: 'InAmigos Foundation (IAF)',
       type: 'Internship',
       period: 'Apr 2026 – May 2026',
